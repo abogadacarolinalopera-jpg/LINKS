@@ -3,54 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carolina Lopera | LM Jurídico</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Carolina Lopera Arango | LM JURÍDICO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --gold: #C5A059; --dark: #000000; --white: #ffffff; }
-        body { background: var(--dark); font-family: sans-serif; color: var(--white); margin: 0; padding: 20px; text-align: center; }
-        .logo { width: 100px; margin-top: 20px; border: 2px solid var(--gold); border-radius: 50%; }
-        h1 { font-size: 1.4rem; margin: 10px 0 5px; }
-        .lema { color: var(--gold); font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 30px; line-height: 1.4; }
-        .btn { background: #1a1a1a; border: 1px solid #333; color: white; display: flex; align-items: center; padding: 15px; margin-bottom: 12px; text-decoration: none; border-radius: 12px; transition: 0.3s; }
-        .btn:hover { border-color: var(--gold); background: #222; }
-        .btn i { color: var(--gold); margin-right: 15px; font-size: 1.2rem; width: 25px; text-align: center; }
-        .txt { text-align: left; }
-        .tit { display: block; font-weight: bold; font-size: 0.9rem; }
-        .prc { font-size: 0.75rem; color: #888; }
-        .whatsapp-main { background: var(--gold); color: black !important; font-weight: bold; border: none; }
-        .whatsapp-main i { color: black; }
+        :root { --dorado: #c5a059; --negro: #0a0a0a; --gris: #1c1c1c; --blanco: #ffffff; }
+        body { background-color: var(--negro); color: var(--blanco); font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+        .container { width: 100%; max-width: 400px; text-align: center; }
+        .logo { width: 120px; height: 120px; border-radius: 50%; border: 2px solid var(--dorado); margin-bottom: 20px; object-fit: cover; }
+        h1 { font-size: 24px; margin: 10px 0; letter-spacing: 1px; }
+        .lema { color: var(--dorado); font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; font-weight: bold; line-height: 1.5; }
+        .btn { background: var(--gris); border: 1px solid #333; padding: 18px; margin-bottom: 15px; border-radius: 15px; display: flex; align-items: center; text-decoration: none; color: var(--blanco); transition: 0.3s; }
+        .btn:active { transform: scale(0.98); background: #252525; }
+        .btn-gold { background: var(--dorado); color: var(--negro); border: none; font-weight: bold; }
+        .btn i { font-size: 22px; width: 40px; text-align: center; }
+        .txt { flex-grow: 1; text-align: left; margin-left: 10px; }
+        .tit { display: block; font-size: 16px; font-weight: bold; }
+        .prc { display: block; font-size: 12px; opacity: 0.7; }
+        footer { margin-top: 40px; font-size: 10px; opacity: 0.5; letter-spacing: 1px; }
     </style>
 </head>
 <body>
-    <img src="https://i.postimg.cc/85M0M1Xz/logo-lm.png" class="logo">
-    <h1>Carolina Lopera Arango</h1>
-    <p class="lema">PRECISIÓN | ESTRATEGIA | RESULTADOS<br>Abogada Especialista</p>
+    <div class="container">
+        <img src="https://github.com/abogadacarolinalopera-jpg.png" alt="Carolina Lopera" class="logo">
+        
+        <h1>Carolina Lopera Arango</h1>
+        <p class="lema">PRECISIÓN I ESTRATEGIA I RESULTADOS<br>Abogada Especialista</p>
 
-    <a href="https://wa.me/573104412661?text=Hola%20Carolina,%20requiero%20asesoría%20jurídica" class="btn whatsapp-main">
-        <i class="fab fa-whatsapp"></i>
-        <div class="txt"><span class="tit">Asesoría Jurídica Estratégica</span><span class="prc">COP 200.000</span></div>
-    </a>
+        <a href="https://wa.me/573104412351?text=Hola%20Dra.%20Carolina,%20solicito%20una%20Asesoría%20Jurídica" class="btn btn-gold">
+            <i class="fab fa-whatsapp"></i>
+            <div class="txt">
+                <span class="tit">Asesoría Jurídica Estratégica</span>
+                <span class="prc">COP 200.000</span>
+            </div>
+        </a>
 
-    <a href="https://wa.me/573104412661?text=Necesito%20ayuda%20con%20Tutela/Petición" class="btn">
-        <i class="fas fa-gavel"></i>
-        <div class="txt"><span class="tit">Tutelas y Derechos de Petición</span><span class="prc">Defensa de tus derechos</span></div>
-    </a>
+        <a href="https://wa.me/573104412351?text=Hola,%20necesito%20información%20sobre%20Tutelas" class="btn">
+            <i class="fas fa-gavel"></i>
+            <div class="txt">
+                <span class="tit">Tutelas y Derechos de Petición</span>
+                <span class="prc">Defensa de tus derechos</span>
+            </div>
+        </a>
 
-    <a href="https://wa.me/573104412661?text=Interés%20en%20Fideicomiso" class="btn">
-        <i class="fas fa-lock"></i>
-        <div class="txt"><span class="tit">Fideicomisos Civiles</span><span class="prc">Desde COP 2.000.000</span></div>
-    </a>
+        <a href="https://wa.me/573104412351?text=Deseo%20información%20sobre%20Fideicomisos" class="btn">
+            <i class="fas fa-lock"></i>
+            <div class="txt">
+                <span class="tit">Fideicomisos Civiles</span>
+                <span class="prc">Desde COP 2.000.000</span>
+            </div>
+        </a>
 
-    <a href="https://wa.me/573104412661?text=Interés%20en%20Pacto%20de%20Socios" class="btn">
-        <i class="fas fa-file-signature"></i>
-        <div class="txt"><span class="tit">Pacto de Socios / SAS</span><span class="prc">Desde COP 1.800.000</span></div>
-    </a>
+        <a href="https://wa.me/573104412351?text=Información%20sobre%20Pacto%20de%20Socios" class="btn">
+            <i class="fas fa-file-signature"></i>
+            <div class="txt">
+                <span class="tit">Pacto de Socios / SAS</span>
+                <span class="prc">Desde COP 1.800.000</span>
+            </div>
+        </a>
 
-    <a href="https://wa.me/573104412661?text=Interés%20en%20Derecho%20Inmobiliario" class="btn">
-        <i class="fas fa-city"></i>
-        <div class="txt"><span class="tit">Derecho Inmobiliario / Catastral</span><span class="prc">Estudios de títulos y trámites</span></div>
-    </a>
+        <a href="https://wa.me/573104412351?text=Información%20sobre%20Derecho%20Inmobiliario" class="btn">
+            <i class="fas fa-city"></i>
+            <div class="txt">
+                <span class="tit">Derecho Inmobiliario / Catastral</span>
+                <span class="prc">Estudios de títulos y trámites</span>
+            </div>
+        </a>
 
-    <p style="font-size: 0.7rem; color: #555; margin-top: 30px;">LM JURÍDICO & FINANCIERO<br>Medellín, Colombia</p>
+        <footer>LM JURÍDICO & ESTRATEGIA © 2026</footer>
+    </div>
 </body>
 </html>
