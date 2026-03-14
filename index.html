@@ -6,44 +6,171 @@
     <title>Carolina Lopera Arango | LM JURÍDICO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        :root { --crema: #f2f0e4; --dorado: #c5a059; --negro: #000000; }
-        body { background-color: var(--negro); color: var(--crema); font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; padding: 50px 20px; text-align: center; }
-        .logo-container { width: 130px; height: 130px; margin-bottom: 15px; position: relative; }
-        .logo { width: 100%; height: 100%; border-radius: 50%; border: 1.5px solid var(--crema); padding: 4px; object-fit: cover; background-color: #000; }
-        h1 { font-size: 20px; letter-spacing: 3px; text-transform: uppercase; margin: 10px 0; font-weight: 300; }
-        .lema { color: var(--dorado); font-size: 10px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 40px; font-weight: bold; }
-        .btn { background: #111; border: 1px solid #222; padding: 16px; margin-bottom: 15px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: var(--crema); transition: 0.3s; width: 100%; max-width: 350px; box-sizing: border-box; }
-        .btn-destacado { background: var(--crema); color: var(--negro); font-weight: bold; border: none; }
-        .btn i { font-size: 20px; width: 35px; }
-        .txt { text-align: left; margin-left: 12px; }
-        .tit { display: block; font-size: 15px; font-weight: bold; }
-        .desc { display: block; font-size: 11px; opacity: 0.7; }
-        footer { margin-top: 50px; font-size: 9px; opacity: 0.4; letter-spacing: 3px; }
+        :root { 
+            --crema: #f2f0e4; 
+            --dorado: #c5a059; 
+            --negro: #000000; 
+            --gris-oscuro: #111111;
+            --gris-borde: #222222;
+        }
+
+        body { 
+            background-color: var(--negro); 
+            color: var(--crema); 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 50px 20px; 
+            text-align: center; 
+        }
+
+        /* Contenedor principal para limitar el ancho en desktop */
+        .main-container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-container { 
+            width: 130px; 
+            height: 130px; 
+            margin-bottom: 15px; 
+        }
+
+        .logo { 
+            width: 100%; 
+            height: 100%; 
+            border-radius: 50%; 
+            border: 1.5px solid var(--crema); 
+            padding: 4px; 
+            object-fit: cover; 
+            background-color: var(--negro); 
+        }
+
+        h1 { 
+            font-size: 22px; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            margin: 10px 0; 
+            font-weight: 300; 
+        }
+
+        .lema { 
+            color: var(--dorado); 
+            font-size: 11px; 
+            letter-spacing: 4px; 
+            text-transform: uppercase; 
+            margin-bottom: 40px; 
+            font-weight: bold; 
+        }
+
+        /* Estilos de botones */
+        .btn { 
+            background: var(--gris-oscuro); 
+            border: 1px solid var(--gris-borde); 
+            padding: 18px; 
+            margin-bottom: 15px; 
+            border-radius: 12px; 
+            display: flex; 
+            align-items: center; 
+            text-decoration: none; 
+            color: var(--crema); 
+            transition: all 0.3s ease; 
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+
+        /* Efecto Hover para botones normales */
+        .btn:hover {
+            transform: translateY(-3px);
+            border-color: var(--dorado);
+            box-shadow: 0 5px 15px rgba(197, 160, 89, 0.2);
+        }
+
+        .btn-destacado { 
+            background: var(--crema); 
+            color: var(--negro); 
+            font-weight: bold; 
+            border: none; 
+        }
+
+        /* Efecto Hover para botón destacado */
+        .btn-destacado:hover {
+            background: var(--dorado);
+            color: var(--negro);
+        }
+
+        .btn i { 
+            font-size: 22px; 
+            width: 40px; 
+            text-align: center;
+        }
+
+        .txt { 
+            text-align: left; 
+            margin-left: 12px; 
+        }
+
+        .tit { 
+            display: block; 
+            font-size: 16px; 
+            font-weight: bold; 
+        }
+
+        .desc { 
+            display: block; 
+            font-size: 11px; 
+            opacity: 0.8; 
+        }
+
+        footer { 
+            margin-top: 50px; 
+            font-size: 10px; 
+            opacity: 0.5; 
+            letter-spacing: 2px; 
+        }
     </style>
 </head>
 <body>
-    <div class="logo-container">
-        <img src="D3D6B537-8FE4-4FBA-A180-B037A08B4699.png" alt="LM Jurídico" class="logo">
+
+    <div class="main-container">
+        <div class="logo-container">
+            <img src="D3D6B537-8FE4-4FBA-A180-B037A08B4699.png" alt="Logo Carolina Lopera - LM Jurídico" class="logo">
+        </div>
+        
+        <h1>Carolina Lopera</h1>
+        <p class="lema">Precisión • Estrategia • Resultados</p>
+        
+        <a href="https://wa.me/573104412351?text=Hola%20Dra.%20Carolina,%20solicito%20una%20Asesoría%20Jurídica" class="btn btn-destacado">
+            <i class="fab fa-whatsapp"></i>
+            <div class="txt">
+                <span class="tit">Asesoría Jurídica</span>
+                <span class="desc">Atención Inmediata</span>
+            </div>
+        </a>
+
+        <a href="https://wa.me/573104412351?text=Hola,%20necesito%20información%20sobre%20Tutelas" class="btn">
+            <i class="fas fa-gavel"></i>
+            <div class="txt">
+                <span class="tit">Tutelas y Peticiones</span>
+                <span class="desc">Defensa de Derechos</span>
+            </div>
+        </a>
+
+        <a href="https://wa.me/573104412351?text=Deseo%20información%20sobre%20Fideicomisos" class="btn">
+            <i class="fas fa-lock"></i>
+            <div class="txt">
+                <span class="tit">Fideicomisos Civiles</span>
+                <span class="desc">Protección de Patrimonio</span>
+            </div>
+        </a>
+
+        <footer>LM JURÍDICO & ESTRATEGIA © 2026</footer>
     </div>
-    
-    <h1>Carolina Lopera</h1>
-    <p class="lema">Precisión • Estrategia • Resultados</p>
-    
-    <a href="https://wa.me/573104412351?text=Hola%20Dra.%20Carolina,%20solicito%20una%20Asesoría%20Jurídica" class="btn btn-destacado">
-        <i class="fab fa-whatsapp"></i>
-        <div class="txt"><span class="tit">Asesoría Jurídica</span><span class="desc">Atención Inmediata</span></div>
-    </a>
 
-    <a href="https://wa.me/573104412351?text=Hola,%20necesito%20información%20sobre%20Tutelas" class="btn">
-        <i class="fas fa-gavel"></i>
-        <div class="txt"><span class="tit">Tutelas y Peticiones</span><span class="desc">Defensa de Derechos</span></div>
-    </a>
-
-    <a href="https://wa.me/573104412351?text=Deseo%20información%20sobre%20Fideicomisos" class="btn">
-        <i class="fas fa-lock"></i>
-        <div class="txt"><span class="tit">Fideicomisos Civiles</span><span class="desc">Protección de Patrimonio</span></div>
-    </a>
-
-    <footer>LM JURÍDICO & ESTRATEGIA © 2026</footer>
 </body>
 </html>
