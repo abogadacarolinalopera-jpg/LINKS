@@ -8,10 +8,11 @@
     <style>
         :root { --crema: #f2f0e4; --dorado: #c5a059; --negro: #000000; }
         body { background-color: var(--negro); color: var(--crema); font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; display: flex; flex-direction: column; align-items: center; padding: 50px 20px; text-align: center; }
-        .logo { width: 130px; height: 130px; border-radius: 50%; border: 1.5px solid var(--crema); margin-bottom: 15px; padding: 4px; object-fit: cover; }
+        .logo-container { width: 130px; height: 130px; margin-bottom: 15px; position: relative; }
+        .logo { width: 100%; height: 100%; border-radius: 50%; border: 1.5px solid var(--crema); padding: 4px; object-fit: cover; background-color: #000; }
         h1 { font-size: 20px; letter-spacing: 3px; text-transform: uppercase; margin: 10px 0; font-weight: 300; }
         .lema { color: var(--dorado); font-size: 10px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 40px; font-weight: bold; }
-        .btn { background: #111; border: 1px solid #222; padding: 16px; margin-bottom: 15px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: var(--crema); transition: 0.3s; width: 100%; max-width: 350px; }
+        .btn { background: #111; border: 1px solid #222; padding: 16px; margin-bottom: 15px; border-radius: 12px; display: flex; align-items: center; text-decoration: none; color: var(--crema); transition: 0.3s; width: 100%; max-width: 350px; box-sizing: border-box; }
         .btn-destacado { background: var(--crema); color: var(--negro); font-weight: bold; border: none; }
         .btn i { font-size: 20px; width: 35px; }
         .txt { text-align: left; margin-left: 12px; }
@@ -21,7 +22,9 @@
     </style>
 </head>
 <body>
-    <img src="D3D6B537-8FE4-4FBA-A180-B037A08B4699.png" alt="LM Jurídico" class="logo">
+    <div class="logo-container">
+        <img src="D3D6B537-8FE4-4FBA-A180-B037A08B4699.png" alt="LM Jurídico" class="logo">
+    </div>
     
     <h1>Carolina Lopera</h1>
     <p class="lema">Precisión • Estrategia • Resultados</p>
