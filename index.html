@@ -24,9 +24,9 @@
             align-items: center; 
             padding: 50px 20px; 
             text-align: center; 
+            overflow-x: hidden;
         }
 
-        /* Contenedor principal para limitar el ancho en desktop */
         .main-container {
             width: 100%;
             max-width: 400px;
@@ -35,10 +35,16 @@
             align-items: center;
         }
 
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
         .logo-container { 
             width: 130px; 
             height: 130px; 
-            margin-bottom: 15px; 
+            margin-bottom: 15px;
+            animation: fadeInUp 0.8s ease forwards;
         }
 
         .logo { 
@@ -56,7 +62,9 @@
             letter-spacing: 3px; 
             text-transform: uppercase; 
             margin: 10px 0; 
-            font-weight: 300; 
+            font-weight: 300;
+            animation: fadeInUp 0.8s ease forwards 0.2s;
+            opacity: 0;
         }
 
         .lema { 
@@ -65,10 +73,11 @@
             letter-spacing: 4px; 
             text-transform: uppercase; 
             margin-bottom: 40px; 
-            font-weight: bold; 
+            font-weight: bold;
+            animation: fadeInUp 0.8s ease forwards 0.4s;
+            opacity: 0;
         }
 
-        /* Estilos de botones */
         .btn { 
             background: var(--gris-oscuro); 
             border: 1px solid var(--gris-borde); 
@@ -82,68 +91,47 @@
             transition: all 0.3s ease; 
             width: 100%; 
             box-sizing: border-box; 
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
         }
 
-        /* Efecto Hover para botones normales */
+        .btn:nth-of-type(1) { animation-delay: 0.6s; }
+        .btn:nth-of-type(2) { animation-delay: 0.8s; }
+        .btn:nth-of-type(3) { animation-delay: 1.0s; }
+
         .btn:hover {
             transform: translateY(-3px);
             border-color: var(--dorado);
             box-shadow: 0 5px 15px rgba(197, 160, 89, 0.2);
         }
 
-        .btn-destacado { 
-            background: var(--crema); 
-            color: var(--negro); 
-            font-weight: bold; 
-            border: none; 
-        }
-
-        /* Efecto Hover para botón destacado */
-        .btn-destacado:hover {
-            background: var(--dorado);
-            color: var(--negro);
-        }
-
-        .btn i { 
-            font-size: 22px; 
-            width: 40px; 
-            text-align: center;
-        }
-
-        .txt { 
-            text-align: left; 
-            margin-left: 12px; 
-        }
-
-        .tit { 
-            display: block; 
-            font-size: 16px; 
-            font-weight: bold; 
-        }
-
-        .desc { 
-            display: block; 
-            font-size: 11px; 
-            opacity: 0.8; 
-        }
+        .btn-destacado { background: var(--crema); color: var(--negro); font-weight: bold; border: none; }
+        .btn-destacado:hover { background: var(--dorado); color: var(--negro); }
+        .btn i { font-size: 22px; width: 40px; text-align: center; }
+        .txt { text-align: left; margin-left: 12px; }
+        .tit { display: block; font-size: 16px; font-weight: bold; }
+        .desc { display: block; font-size: 11px; opacity: 0.8; }
 
         footer { 
             margin-top: 50px; 
             font-size: 10px; 
             opacity: 0.5; 
-            letter-spacing: 2px; 
+            letter-spacing: 2px;
+            animation: fadeInUp 0.8s ease forwards 1.2s;
+            opacity: 0;
         }
     </style>
 </head>
 <body>
 
     <div class="main-container">
-        <div class="logo-container">
-            <img src="D3D6B537-8FE4-4FBA-A180-B037A08B4699.png" alt="Logo Carolina Lopera - LM Jurídico" class="logo">
-        </div>
-        
-        <h1>Carolina Lopera</h1>
-        <p class="lema">Precisión • Estrategia • Resultados</p>
+        <header>
+            <div class="logo-container">
+                <img src="abogadacarolinalopera-jpg" alt="Logo Carolina Lopera" class="logo">
+            </div>
+            <h1>Carolina Lopera</h1>
+            <p class="lema">Precisión • Estrategia • Resultados</p>
+        </header>
         
         <a href="https://wa.me/573104412351?text=Hola%20Dra.%20Carolina,%20solicito%20una%20Asesoría%20Jurídica" class="btn btn-destacado">
             <i class="fab fa-whatsapp"></i>
